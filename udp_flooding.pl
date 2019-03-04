@@ -17,7 +17,7 @@ print "\n============================";
 print "\n[!] Enter the designated ip: "; # Set IP
 $ip = <STDIN>;
 chomp ($ip);
-while (!($ip =~ /(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/)){
+while (!($ip =~ /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/)){
 	print "\n[!] Enter the designated ip correctly: "; # Re-enter IP
 	$ip = <STDIN>;
 	chomp ($ip);
